@@ -35,7 +35,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [Your Website](https://karthiksriram09.github.io/BLOGGING-PAGE/)
+Email - karthiksriram009@gmail.com
+
+Web-Page - [Click Here!](https://karthiksriram09.github.io/BLOGGING-PAGE/)
 
 Project Link: [https://github.com/Karthiksriram09/BLOGGING-PAGE](https://github.com/Karthiksriram09/BLOGGING-PAGE.git)
 
