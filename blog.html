@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentCraft</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ricons@latest/fonts/ricon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Add your existing styles here */
+
+        .write-blog-container {
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .write-blog-container h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .write-blog-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .write-blog-container input,
+        .write-blog-container textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .write-blog-container button {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .write-blog-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="header">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">ContentCraft</a>
+            <ul class="nav__items">
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">SignIn</a></li>
+                <li class="nav__profile">
+                    <div class="profile-img">
+                        <img src="images/profile.png" alt="Profile Image">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <section class="featured">
+        <div class="container featured__container">
+            <div class="post__thumbnail">
+                <img src="./images/foodblogbg.png" alt="Featured Image">
+                <div class="post__info">
+                    <h2 class="post__title"><a href="post.html">Food Blogs</a></h2>
+                </div>
+            </div>
+            <p class="post__body">Food blogs come in several flavors. On the one hand, there are the food critics,
+                who go from one restaurant table to the next, tasting different dishes and narrating their
+                experiences.</p>
+        </div>
+
+        <div class="container featured__container">
+            <div class="post__thumbnail">
+                <img src="./images/techblogbg.png" alt="Featured Image">
+                <div class="post__info">
+                    <h2 class="post__title"><a href="post.html">Tech Blog</a></h2>
+                </div>
+            </div>
+            <p class="post__body">Tech blog means blogs or websites that provide technical information like gadgets,
+                apps, Internet, Networking, Mobile, Gadgets, Social media Web design, and more</p>
+        </div>
+
+        <div class="container featured__container">
+            <div class="post__thumbnail">
+                <img src="./images/HealthnFitnessbg.png" alt="Featured Image">
+                <div class="post__info">
+                    <h2 class="post__title"><a href="post.html">Health and Fitness</a></h2>
+                </div>
+            </div>
+            <p class="post__body">
+                Discover the secrets to living a healthier, more balanced life with our comprehensive guides and
+                tips on nutrition, exercise, mental well-being, and more. Whether you're looking to make small
+                changes or embark on a complete lifestyle overhaul, we've got you covered.
+            </p>
+        </div>
+        <div class="container featured__container">
+            <div class="post__thumbnail">
+                <img src="./images/Travelblogbg.png" alt="Featured Image">
+                <div class="post__info">
+                    <h2 class="post__title"><a href="post.html">Travel Blog</a></h2>
+                </div>
+            </div>
+            <p class="post__body">A travel blog is a blog that's specifically dedicated to travel in some capacity.
+                Travel bloggers share stories, tips and tricks about traveling. There are a ton of different sub
+                niches, which help bloggers curate their ideal audience with a focus</p>
+        </div>
+    </section>
+
+    <section class="write-blog-container">
+        <h2>Write a Blog</h2>
+        <form>
+            <input type="text" name="title" placeholder="Blog Title" required>
+            <textarea name="content" rows="10" placeholder="Write your blog content here..." required></textarea>
+            <button type="submit">Submit Blog</button>
+        </form>
+    </section>
+
+    <br>
+    <footer>
+        <div class="footer__socials">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github-square"></i></a>
+        </div>
+        <div class="container footer__container">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Art</a></li>
+                    <li><a href="">Science & Technology</a></li>
+                    <li><a href="">Fitness</a></li>
+                    <li><a href="">Movie</a></li>
+                    <li><a href="">Political</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Online Support</a></li>
+                    <li><a href="">Call Numbers</a></li>
+                    <li><a href="">Emails</a></li>
+                    <li><a href="">Donate</a></li>
+                    <li><a href="">Find Us</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="">Recent</a></li>
+                    <li><a href="">Writers</a></li>
+                    <li><a href="">Popular Categories</a></li>
+                    <li><a href="">Daily</a></li>
+                    <li><a href="">Readers</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="signin.html">SignIn</a></li>
+                </ul>
+            </article>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; K. KARTHIK SRIRAM</small>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('open__nav-btn').addEventListener('click', () => {
+            document.querySelector('.nav__items').style.display = 'flex';
+        });
+
+        document.getElementById('close__nav-btn').addEventListener('click', () => {
+            document.querySelector('.nav__items').style.display = 'none';
+        });
+        document.getElementById('search-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const posts = document.querySelectorAll('.featured__container');
+
+            posts.forEach(post => {
+                const title = post.querySelector('.post__title a').textContent.toLowerCase();
+                const body = post.querySelector('.post__body').textContent.toLowerCase();
+
+                if (title.includes(query) || body.includes(query)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
